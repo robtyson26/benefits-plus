@@ -1,4 +1,15 @@
 [build]
   command = "npm run build"
-  publish = "out"
-  plugins = []
+  publish = ".next"
+
+[functions]
+  directory = "netlify/functions"
+
+[headers]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "no-referrer"
+    [[plugins]]
+  package = "@netlify/plugin-nextjs"

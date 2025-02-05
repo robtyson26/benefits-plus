@@ -3,12 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
- "scripts": {
-  "dev": "next dev",
-  "build": "next build",
-  "start": "next start"
-},
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4"
   },
   "dependencies": {
     "dotenv": "^16.4.7",
